@@ -2,6 +2,13 @@ Ansible-4-Openshift-on-Proxmox
 
 Playbook in action https://youtu.be/TBtNi4pi9pU
 
+Create Proxmox VMs
+```
+ansible-playbook --ask-vault-pass task/cluster-proxmox-server-setup.yml
+```
+
+
+
 Commands post Ansible playbooks
 ```
 openshift-install --dir=/root/os4_installer wait-for bootstrap-complete --log-level=debug
